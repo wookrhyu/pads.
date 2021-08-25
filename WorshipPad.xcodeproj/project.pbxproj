@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5394E40926B8D14C00A88B17 /* PadKeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */; };
+		5394E40E26B8D78F00A88B17 /* note_Bb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5394E40C26B8D78F00A88B17 /* note_Bb.mp3 */; };
+		5394E41226B8E43600A88B17 /* note_C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5394E41026B8E43600A88B17 /* note_C.mp3 */; };
+		5394E41326B8E43600A88B17 /* note_B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5394E41126B8E43600A88B17 /* note_B.mp3 */; };
+		5394E41726B8F33200A88B17 /* note_A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5394E41626B8F33200A88B17 /* note_A.mp3 */; };
 		53B418C426AA108300463B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C326AA108300463B74 /* AppDelegate.swift */; };
 		53B418C626AA108300463B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C526AA108300463B74 /* SceneDelegate.swift */; };
-		53B418C826AA108300463B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C726AA108300463B74 /* ViewController.swift */; };
-		53B418CB26AA108300463B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B418C926AA108300463B74 /* Main.storyboard */; };
+		53B418C826AA108300463B74 /* MainPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C726AA108300463B74 /* MainPanel.swift */; };
 		53B418CD26AA108500463B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CC26AA108500463B74 /* Assets.xcassets */; };
 		53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CE26AA108500463B74 /* LaunchScreen.storyboard */; };
+		53B418D926AA154900463B74 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418D826AA154900463B74 /* KeyButton.swift */; };
+		53E5297826D5708400B3B103 /* KeyButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5297726D5708400B3B103 /* KeyButton+EXT.swift */; };
+		8DCF715E0A26DD522E4260E8 /* Pods_WorshipPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6570482CF3C7DA86E7463F5D /* Pods_WorshipPad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadKeyConstants.swift; sourceTree = "<group>"; };
+		5394E40C26B8D78F00A88B17 /* note_Bb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_Bb.mp3; path = ../../../../Downloads/note_Bb.mp3; sourceTree = "<group>"; };
+		5394E41026B8E43600A88B17 /* note_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_C.mp3; path = ../../../../Downloads/note_C.mp3; sourceTree = "<group>"; };
+		5394E41126B8E43600A88B17 /* note_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_B.mp3; path = ../../../../Downloads/note_B.mp3; sourceTree = "<group>"; };
+		5394E41626B8F33200A88B17 /* note_A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_A.mp3; path = ../../../../Downloads/note_A.mp3; sourceTree = "<group>"; };
 		53B418C026AA108300463B74 /* WorshipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorshipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B418C326AA108300463B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B418C526AA108300463B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53B418C726AA108300463B74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		53B418CA26AA108300463B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53B418C726AA108300463B74 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
 		53B418CC26AA108500463B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B418CF26AA108500463B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53B418D126AA108500463B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B418D826AA154900463B74 /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
+		53E5297726D5708400B3B103 /* KeyButton+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyButton+EXT.swift"; sourceTree = "<group>"; };
+		6570482CF3C7DA86E7463F5D /* Pods_WorshipPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorshipPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD80E6B14FE9ED045A315D42 /* Pods-WorshipPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorshipPad.release.xcconfig"; path = "Target Support Files/Pods-WorshipPad/Pods-WorshipPad.release.xcconfig"; sourceTree = "<group>"; };
+		E2F306F9761E2FBFA93BF0A8 /* Pods-WorshipPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorshipPad.debug.xcconfig"; path = "Target Support Files/Pods-WorshipPad/Pods-WorshipPad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCF715E0A26DD522E4260E8 /* Pods_WorshipPad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D46353F98433E5E2566E59B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2F306F9761E2FBFA93BF0A8 /* Pods-WorshipPad.debug.xcconfig */,
+				AD80E6B14FE9ED045A315D42 /* Pods-WorshipPad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		53B418B726AA108300463B74 = {
 			isa = PBXGroup;
 			children = (
 				53B418C226AA108300463B74 /* WorshipPad */,
 				53B418C126AA108300463B74 /* Products */,
+				0D46353F98433E5E2566E59B /* Pods */,
+				B7598BB31E432B3E4DC702E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,37 @@
 		53B418C226AA108300463B74 /* WorshipPad */ = {
 			isa = PBXGroup;
 			children = (
-				53B418C326AA108300463B74 /* AppDelegate.swift */,
-				53B418C526AA108300463B74 /* SceneDelegate.swift */,
-				53B418C726AA108300463B74 /* ViewController.swift */,
-				53B418C926AA108300463B74 /* Main.storyboard */,
-				53B418CC26AA108500463B74 /* Assets.xcassets */,
-				53B418CE26AA108500463B74 /* LaunchScreen.storyboard */,
+				53B418C726AA108300463B74 /* MainPanel.swift */,
+				53B418D826AA154900463B74 /* KeyButton.swift */,
+				53E5297726D5708400B3B103 /* KeyButton+EXT.swift */,
+				53B418D726AA13CF00463B74 /* Support */,
 				53B418D126AA108500463B74 /* Info.plist */,
+				5394E41626B8F33200A88B17 /* note_A.mp3 */,
+				5394E40C26B8D78F00A88B17 /* note_Bb.mp3 */,
+				5394E41126B8E43600A88B17 /* note_B.mp3 */,
+				5394E41026B8E43600A88B17 /* note_C.mp3 */,
+				5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */,
 			);
 			path = WorshipPad;
+			sourceTree = "<group>";
+		};
+		53B418D726AA13CF00463B74 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				53B418CE26AA108500463B74 /* LaunchScreen.storyboard */,
+				53B418CC26AA108500463B74 /* Assets.xcassets */,
+				53B418C526AA108300463B74 /* SceneDelegate.swift */,
+				53B418C326AA108300463B74 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B7598BB31E432B3E4DC702E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6570482CF3C7DA86E7463F5D /* Pods_WorshipPad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53B418D426AA108500463B74 /* Build configuration list for PBXNativeTarget "WorshipPad" */;
 			buildPhases = (
+				FAE74F08AA72704DA3AA4AC6 /* [CP] Check Pods Manifest.lock */,
 				53B418BC26AA108300463B74 /* Sources */,
 				53B418BD26AA108300463B74 /* Frameworks */,
 				53B418BE26AA108300463B74 /* Resources */,
+				EC07A28FCFBD334A369B465A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +176,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5394E41326B8E43600A88B17 /* note_B.mp3 in Resources */,
 				53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */,
+				5394E41226B8E43600A88B17 /* note_C.mp3 in Resources */,
+				5394E41726B8F33200A88B17 /* note_A.mp3 in Resources */,
 				53B418CD26AA108500463B74 /* Assets.xcassets in Resources */,
-				53B418CB26AA108300463B74 /* Main.storyboard in Resources */,
+				5394E40E26B8D78F00A88B17 /* note_Bb.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC07A28FCFBD334A369B465A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorshipPad/Pods-WorshipPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorshipPad/Pods-WorshipPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorshipPad/Pods-WorshipPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE74F08AA72704DA3AA4AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorshipPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53B418BC26AA108300463B74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B418C826AA108300463B74 /* ViewController.swift in Sources */,
+				5394E40926B8D14C00A88B17 /* PadKeyConstants.swift in Sources */,
+				53E5297826D5708400B3B103 /* KeyButton+EXT.swift in Sources */,
+				53B418C826AA108300463B74 /* MainPanel.swift in Sources */,
 				53B418C426AA108300463B74 /* AppDelegate.swift in Sources */,
 				53B418C626AA108300463B74 /* SceneDelegate.swift in Sources */,
+				53B418D926AA154900463B74 /* KeyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		53B418C926AA108300463B74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53B418CA26AA108300463B74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		53B418CE26AA108500463B74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +375,7 @@
 		};
 		53B418D526AA108500463B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F306F9761E2FBFA93BF0A8 /* Pods-WorshipPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +395,7 @@
 		};
 		53B418D626AA108500463B74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD80E6B14FE9ED045A315D42 /* Pods-WorshipPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
