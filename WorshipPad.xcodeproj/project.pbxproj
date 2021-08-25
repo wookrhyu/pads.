@@ -19,6 +19,14 @@
 		53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CE26AA108500463B74 /* LaunchScreen.storyboard */; };
 		53B418D926AA154900463B74 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418D826AA154900463B74 /* KeyButton.swift */; };
 		53E5297826D5708400B3B103 /* KeyButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5297726D5708400B3B103 /* KeyButton+EXT.swift */; };
+		53E5298326D5D1AE00B3B103 /* note_G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297B26D5D1AE00B3B103 /* note_G.mp3 */; };
+		53E5298426D5D1AE00B3B103 /* note_F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297C26D5D1AE00B3B103 /* note_F.mp3 */; };
+		53E5298526D5D1AE00B3B103 /* note_E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297D26D5D1AE00B3B103 /* note_E.mp3 */; };
+		53E5298626D5D1AE00B3B103 /* note_Db.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297E26D5D1AE00B3B103 /* note_Db.mp3 */; };
+		53E5298726D5D1AE00B3B103 /* note_Eb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297F26D5D1AE00B3B103 /* note_Eb.mp3 */; };
+		53E5298826D5D1AE00B3B103 /* note_F#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5298026D5D1AE00B3B103 /* note_F#.mp3 */; };
+		53E5298926D5D1AE00B3B103 /* note_D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5298126D5D1AE00B3B103 /* note_D.mp3 */; };
+		53E5298A26D5D1AE00B3B103 /* note_Ab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5298226D5D1AE00B3B103 /* note_Ab.mp3 */; };
 		8DCF715E0A26DD522E4260E8 /* Pods_WorshipPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6570482CF3C7DA86E7463F5D /* Pods_WorshipPad.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +45,14 @@
 		53B418D126AA108500463B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53B418D826AA154900463B74 /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
 		53E5297726D5708400B3B103 /* KeyButton+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyButton+EXT.swift"; sourceTree = "<group>"; };
+		53E5297B26D5D1AE00B3B103 /* note_G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_G.mp3; path = ../../../../Downloads/note_G.mp3; sourceTree = "<group>"; };
+		53E5297C26D5D1AE00B3B103 /* note_F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_F.mp3; path = ../../../../Downloads/note_F.mp3; sourceTree = "<group>"; };
+		53E5297D26D5D1AE00B3B103 /* note_E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_E.mp3; path = ../../../../Downloads/note_E.mp3; sourceTree = "<group>"; };
+		53E5297E26D5D1AE00B3B103 /* note_Db.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_Db.mp3; path = ../../../../Downloads/note_Db.mp3; sourceTree = "<group>"; };
+		53E5297F26D5D1AE00B3B103 /* note_Eb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_Eb.mp3; path = ../../../../Downloads/note_Eb.mp3; sourceTree = "<group>"; };
+		53E5298026D5D1AE00B3B103 /* note_F#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "note_F#.mp3"; path = "../../../../Downloads/note_F#.mp3"; sourceTree = "<group>"; };
+		53E5298126D5D1AE00B3B103 /* note_D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_D.mp3; path = ../../../../Downloads/note_D.mp3; sourceTree = "<group>"; };
+		53E5298226D5D1AE00B3B103 /* note_Ab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_Ab.mp3; path = ../../../../Downloads/note_Ab.mp3; sourceTree = "<group>"; };
 		6570482CF3C7DA86E7463F5D /* Pods_WorshipPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorshipPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD80E6B14FE9ED045A315D42 /* Pods-WorshipPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorshipPad.release.xcconfig"; path = "Target Support Files/Pods-WorshipPad/Pods-WorshipPad.release.xcconfig"; sourceTree = "<group>"; };
 		E2F306F9761E2FBFA93BF0A8 /* Pods-WorshipPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorshipPad.debug.xcconfig"; path = "Target Support Files/Pods-WorshipPad/Pods-WorshipPad.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,13 +103,21 @@
 				53B418C726AA108300463B74 /* MainPanel.swift */,
 				53B418D826AA154900463B74 /* KeyButton.swift */,
 				53E5297726D5708400B3B103 /* KeyButton+EXT.swift */,
+				5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */,
 				53B418D726AA13CF00463B74 /* Support */,
 				53B418D126AA108500463B74 /* Info.plist */,
 				5394E41626B8F33200A88B17 /* note_A.mp3 */,
 				5394E40C26B8D78F00A88B17 /* note_Bb.mp3 */,
 				5394E41126B8E43600A88B17 /* note_B.mp3 */,
 				5394E41026B8E43600A88B17 /* note_C.mp3 */,
-				5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */,
+				53E5297E26D5D1AE00B3B103 /* note_Db.mp3 */,
+				53E5298126D5D1AE00B3B103 /* note_D.mp3 */,
+				53E5297F26D5D1AE00B3B103 /* note_Eb.mp3 */,
+				53E5297D26D5D1AE00B3B103 /* note_E.mp3 */,
+				53E5297C26D5D1AE00B3B103 /* note_F.mp3 */,
+				53E5298026D5D1AE00B3B103 /* note_F#.mp3 */,
+				53E5297B26D5D1AE00B3B103 /* note_G.mp3 */,
+				53E5298226D5D1AE00B3B103 /* note_Ab.mp3 */,
 			);
 			path = WorshipPad;
 			sourceTree = "<group>";
@@ -176,12 +200,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E5298726D5D1AE00B3B103 /* note_Eb.mp3 in Resources */,
 				5394E41326B8E43600A88B17 /* note_B.mp3 in Resources */,
+				53E5298826D5D1AE00B3B103 /* note_F#.mp3 in Resources */,
+				53E5298526D5D1AE00B3B103 /* note_E.mp3 in Resources */,
 				53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */,
+				53E5298426D5D1AE00B3B103 /* note_F.mp3 in Resources */,
+				53E5298926D5D1AE00B3B103 /* note_D.mp3 in Resources */,
 				5394E41226B8E43600A88B17 /* note_C.mp3 in Resources */,
 				5394E41726B8F33200A88B17 /* note_A.mp3 in Resources */,
 				53B418CD26AA108500463B74 /* Assets.xcassets in Resources */,
+				53E5298626D5D1AE00B3B103 /* note_Db.mp3 in Resources */,
+				53E5298A26D5D1AE00B3B103 /* note_Ab.mp3 in Resources */,
 				5394E40E26B8D78F00A88B17 /* note_Bb.mp3 in Resources */,
+				53E5298326D5D1AE00B3B103 /* note_G.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

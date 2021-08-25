@@ -23,7 +23,6 @@ class MainPanel: UIViewController {
     let GbButton            = KeyButton(key: "F#")
     let GButton             = KeyButton(key: "G")
     let AbButton            = KeyButton(key: "Ab")
-    let nullButton          = KeyButton(key: "#")
     
     let firstContainer      = UIStackView()
     let secondContainer     = UIStackView()
