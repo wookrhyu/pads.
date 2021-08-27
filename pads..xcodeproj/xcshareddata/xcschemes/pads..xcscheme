@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "53B418BF26AA108300463B74"
-               BuildableName = "WorshipPad.app"
+               BuildableName = "pads..app"
                BlueprintName = "pads."
                ReferencedContainer = "container:pads..xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "53B418BF26AA108300463B74"
-            BuildableName = "WorshipPad.app"
+            BuildableName = "pads..app"
             BlueprintName = "pads."
             ReferencedContainer = "container:pads..xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "53B418BF26AA108300463B74"
-            BuildableName = "WorshipPad.app"
+            BuildableName = "pads..app"
             BlueprintName = "pads."
             ReferencedContainer = "container:pads..xcodeproj">
          </BuildableReference>
