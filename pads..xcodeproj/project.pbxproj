@@ -36,7 +36,7 @@
 		5394E41026B8E43600A88B17 /* note_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_C.mp3; path = ../../../../Downloads/note_C.mp3; sourceTree = "<group>"; };
 		5394E41126B8E43600A88B17 /* note_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_B.mp3; path = ../../../../Downloads/note_B.mp3; sourceTree = "<group>"; };
 		5394E41626B8F33200A88B17 /* note_A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_A.mp3; path = ../../../../Downloads/note_A.mp3; sourceTree = "<group>"; };
-		53B418C026AA108300463B74 /* WorshipPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorshipPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B418C026AA108300463B74 /* pads..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pads..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B418C326AA108300463B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B418C526AA108300463B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53B418C726AA108300463B74 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		53B418C126AA108300463B74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53B418C026AA108300463B74 /* WorshipPad.app */,
+				53B418C026AA108300463B74 /* pads..app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53B418BF26AA108300463B74 /* WorshipPad */ = {
+		53B418BF26AA108300463B74 /* pads. */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53B418D426AA108500463B74 /* Build configuration list for PBXNativeTarget "WorshipPad" */;
+			buildConfigurationList = 53B418D426AA108500463B74 /* Build configuration list for PBXNativeTarget "pads." */;
 			buildPhases = (
 				FAE74F08AA72704DA3AA4AC6 /* [CP] Check Pods Manifest.lock */,
 				53B418BC26AA108300463B74 /* Sources */,
@@ -158,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = WorshipPad;
+			name = pads.;
 			productName = WorshipPad;
-			productReference = 53B418C026AA108300463B74 /* WorshipPad.app */;
+			productReference = 53B418C026AA108300463B74 /* pads..app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 53B418BB26AA108300463B74 /* Build configuration list for PBXProject "WorshipPad" */;
+			buildConfigurationList = 53B418BB26AA108300463B74 /* Build configuration list for PBXProject "pads." */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53B418BF26AA108300463B74 /* WorshipPad */,
+				53B418BF26AA108300463B74 /* pads. */,
 			);
 		};
 /* End PBXProject section */
@@ -419,7 +419,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wookrhyu.WorshipPad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pads.;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wookrhyu.WorshipPad;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pads.;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53B418BB26AA108300463B74 /* Build configuration list for PBXProject "WorshipPad" */ = {
+		53B418BB26AA108300463B74 /* Build configuration list for PBXProject "pads." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53B418D226AA108500463B74 /* Debug */,
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53B418D426AA108500463B74 /* Build configuration list for PBXNativeTarget "WorshipPad" */ = {
+		53B418D426AA108500463B74 /* Build configuration list for PBXNativeTarget "pads." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53B418D526AA108500463B74 /* Debug */,
