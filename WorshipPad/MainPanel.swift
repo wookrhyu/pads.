@@ -20,7 +20,7 @@ class MainPanel: UIViewController {
     let EbButton            = KeyButton(key: "Eb")
     let EButton             = KeyButton(key: "E")
     let FButton             = KeyButton(key: "F")
-    let GbButton            = KeyButton(key: "F#")
+    let GbButton            = KeyButton(key: "Gb")
     let GButton             = KeyButton(key: "G")
     let AbButton            = KeyButton(key: "Ab")
     
@@ -33,7 +33,7 @@ class MainPanel: UIViewController {
     var currentColored:KeyButton!
     
     var containerArray:[UIStackView] {
-        return [self.firstContainer, self.secondContainer, self.thirdContainer, self.fourthContainer]
+        return [firstContainer, secondContainer, thirdContainer, fourthContainer]
     }
     
     var keyButtonArray:[KeyButton]{
@@ -64,7 +64,7 @@ class MainPanel: UIViewController {
             container.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        let fourthOfHeight = view.bounds.height/4
+        let fourthOfHeight = (view.bounds.height-16)/4
         let padding:CGFloat = 5
         
         NSLayoutConstraint.activate([
@@ -95,7 +95,7 @@ class MainPanel: UIViewController {
         var buttonArray:[KeyButton] {
             return [firstButton, secondButton, thirdButton]
         }
-        
+
         for button in buttonArray{
             container.addArrangedSubview(button)
             button.backgroundColor = .white.withAlphaComponent(0.15)
@@ -104,6 +104,7 @@ class MainPanel: UIViewController {
     
     func configureToggleSound(){
         for keyButton in keyButtonArray{
+
             keyButton.addTarget(self, action: #selector(toggleSound(sender:)), for: .touchUpInside)
         }
     }
@@ -124,26 +125,23 @@ class MainPanel: UIViewController {
         }
     }
     
-    
-    
     @objc func toggleSound(sender: Any) {
         
         let button = sender as? KeyButton
         let filename = "note_\(button!.keyString!)"
 
         if soundPlaying == false { //If no Pad sound is currently playing
-            print("On")
-            
+
             guard let path = Bundle.main.path(forResource: filename, ofType:"mp3") else {
                 return }
             let url = URL(fileURLWithPath: path)
-            
+
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
                 print("Playback OK")
                 try AVAudioSession.sharedInstance().setActive(true)
                 print("Session is Active")
-                
+
                 self.fadeInColor(button!)
                 player = try AVAudioPlayer(contentsOf: url)
                 player?.play()
@@ -153,44 +151,47 @@ class MainPanel: UIViewController {
                 soundPlaying = true
                 currentKey = button!.keyString!
                 currentColored = button!
-                
+
             } catch let error {
                 print(error.localizedDescription)
             }
-            
-        } else if button?.keyString != currentKey{ //If a different Key is selected but sound should still be played
-            
+
+            return
+
+        } else if button?.keyString != currentKey { //If a different Key is selected but sound should still be played
+
+            print("different key is selected")
             print("turning off current key")
             self.fadeOutColor(currentColored)
             cephalopod = Cephalopod(player: player!)
             cephalopod?.fadeOut(duration: 3, velocity: 2, onFinished: {finished in
-                
+
                 print("finished fading out")
                 print("turning on new key")
                 self.fadeInColor(button!)
                 guard let path = Bundle.main.path(forResource: filename, ofType:"mp3") else {
                     return }
                 let url = URL(fileURLWithPath: path)
-                
+
                 do {
                     try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
                     print("Playback OK")
                     try AVAudioSession.sharedInstance().setActive(true)
                     print("Session is Active")
-                    
+
                     self.player = try AVAudioPlayer(contentsOf: url)
                     self.player?.play()
                     self.player?.volume = 0
                     self.cephalopod = Cephalopod(player: self.player!)
                     self.cephalopod?.fadeIn(duration: 3, velocity: 2, onFinished:{ finished in print("finishe fading in")})
-                    self.soundPlaying = true
+
                     self.currentKey = button!.keyString!
                     self.currentColored = button!
                 } catch let error {
                     print(error.localizedDescription)
                 }
             })
-        }else{ //If same key is selected meaning sound should turn off
+        } else { //If same key is selected meaning sound should turn off
             print("Off")
             fadeOutColor(button!)
             cephalopod = Cephalopod(player: player!)

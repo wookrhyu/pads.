@@ -16,8 +16,6 @@ class KeyButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-        //configurebuttonContainer()
-        configureButtonAttributes()
         configureKeyLabel()
     }
     
@@ -38,25 +36,21 @@ class KeyButton: UIButton {
             keyLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
     }
-    
-    func configureButtonAttributes() {
-    
-    }
-    
-    func configurebuttonContainer() {
-        self.addSubview(buttonContainer)
-        buttonContainer.backgroundColor = .cyan
-        buttonContainer.translatesAutoresizingMaskIntoConstraints = false
-        
-        let padding:CGFloat = 5
-        
-        NSLayoutConstraint.activate([
-            buttonContainer.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
-            buttonContainer.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: padding),
-            buttonContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
-            buttonContainer.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: padding)
-        ])
-    }
+//
+//    func configurebuttonContainer() {
+//        self.addSubview(buttonContainer)
+//        buttonContainer.backgroundColor = .cyan
+//        buttonContainer.translatesAutoresizingMaskIntoConstraints = false
+//
+//        let padding:CGFloat = 5
+//
+//        NSLayoutConstraint.activate([
+//            buttonContainer.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
+//            buttonContainer.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: padding),
+//            buttonContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
+//            buttonContainer.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: padding)
+//        ])
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

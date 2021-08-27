@@ -18,7 +18,6 @@
 		53B418CD26AA108500463B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CC26AA108500463B74 /* Assets.xcassets */; };
 		53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CE26AA108500463B74 /* LaunchScreen.storyboard */; };
 		53B418D926AA154900463B74 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418D826AA154900463B74 /* KeyButton.swift */; };
-		53E5297826D5708400B3B103 /* KeyButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5297726D5708400B3B103 /* KeyButton+EXT.swift */; };
 		53E5298326D5D1AE00B3B103 /* note_G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297B26D5D1AE00B3B103 /* note_G.mp3 */; };
 		53E5298426D5D1AE00B3B103 /* note_F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297C26D5D1AE00B3B103 /* note_F.mp3 */; };
 		53E5298526D5D1AE00B3B103 /* note_E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53E5297D26D5D1AE00B3B103 /* note_E.mp3 */; };
@@ -44,7 +43,6 @@
 		53B418CF26AA108500463B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53B418D126AA108500463B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53B418D826AA154900463B74 /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
-		53E5297726D5708400B3B103 /* KeyButton+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyButton+EXT.swift"; sourceTree = "<group>"; };
 		53E5297B26D5D1AE00B3B103 /* note_G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_G.mp3; path = ../../../../Downloads/note_G.mp3; sourceTree = "<group>"; };
 		53E5297C26D5D1AE00B3B103 /* note_F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_F.mp3; path = ../../../../Downloads/note_F.mp3; sourceTree = "<group>"; };
 		53E5297D26D5D1AE00B3B103 /* note_E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = note_E.mp3; path = ../../../../Downloads/note_E.mp3; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				53B418C726AA108300463B74 /* MainPanel.swift */,
 				53B418D826AA154900463B74 /* KeyButton.swift */,
-				53E5297726D5708400B3B103 /* KeyButton+EXT.swift */,
 				5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */,
 				53B418D726AA13CF00463B74 /* Support */,
 				53B418D126AA108500463B74 /* Info.plist */,
@@ -267,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5394E40926B8D14C00A88B17 /* PadKeyConstants.swift in Sources */,
-				53E5297826D5708400B3B103 /* KeyButton+EXT.swift in Sources */,
 				53B418C826AA108300463B74 /* MainPanel.swift in Sources */,
 				53B418C426AA108300463B74 /* AppDelegate.swift in Sources */,
 				53B418C626AA108300463B74 /* SceneDelegate.swift in Sources */,
