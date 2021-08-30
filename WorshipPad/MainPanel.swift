@@ -110,7 +110,7 @@ class MainPanel: UIViewController {
     }
     
     func fadeInColor(_ viewToAnimate:UIButton){
-        UIButton.animate(withDuration: 3) {
+        UIButton.animate(withDuration: 1) {
             viewToAnimate.backgroundColor = .white.withAlphaComponent(0.30)
         } completion: { (_) in
             print("done changing color")
@@ -118,10 +118,16 @@ class MainPanel: UIViewController {
     }
     
     func fadeOutColor(_ viewToAnimate:UIButton){
-        UIButton.animate(withDuration: 3) {
+        UIButton.animate(withDuration: 1) {
             viewToAnimate.backgroundColor = .white.withAlphaComponent(0.15)
         } completion: { (_) in
             print("done changing color")
+        }
+    }
+    
+    func disableButtons(set: Bool) {
+        for button in keyButtonArray{
+            button.isUserInteractionEnabled = !set
         }
     }
     
@@ -147,7 +153,7 @@ class MainPanel: UIViewController {
                 player?.play()
                 player?.volume = 0
                 cephalopod = Cephalopod(player: player!)
-                cephalopod?.fadeIn(duration: 3, velocity: 2, onFinished:{ finished in print("finished fading in")})
+                cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in print("finished fading in")})
                 soundPlaying = true
                 currentKey = button!.keyString!
                 currentColored = button!
@@ -159,12 +165,13 @@ class MainPanel: UIViewController {
             return
 
         } else if button?.keyString != currentKey { //If a different Key is selected but sound should still be played
-
+             
             print("different key is selected")
             print("turning off current key")
+            
             self.fadeOutColor(currentColored)
             cephalopod = Cephalopod(player: player!)
-            cephalopod?.fadeOut(duration: 3, velocity: 2, onFinished: {finished in
+            cephalopod?.fadeOut(duration: 1, velocity: 2, onFinished: {finished in
 
                 print("finished fading out")
                 print("turning on new key")
@@ -183,7 +190,7 @@ class MainPanel: UIViewController {
                     self.player?.play()
                     self.player?.volume = 0
                     self.cephalopod = Cephalopod(player: self.player!)
-                    self.cephalopod?.fadeIn(duration: 3, velocity: 2, onFinished:{ finished in print("finishe fading in")})
+                    self.cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in print("finishe fading in")})
 
                     self.currentKey = button!.keyString!
                     self.currentColored = button!
@@ -191,11 +198,13 @@ class MainPanel: UIViewController {
                     print(error.localizedDescription)
                 }
             })
+            
+            
         } else { //If same key is selected meaning sound should turn off
             print("Off")
             fadeOutColor(button!)
             cephalopod = Cephalopod(player: player!)
-            cephalopod?.fadeOut(duration: 3, velocity: 2, onFinished: {finished in print("finished fading out")})
+            cephalopod?.fadeOut(duration: 1, velocity: 2, onFinished: {finished in print("finished fading out")})
             soundPlaying = false
         }
     }
