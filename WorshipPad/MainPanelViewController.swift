@@ -1,5 +1,5 @@
 //
-//  MainPanel.swift
+//  MainPanelViewController.swift
 //  WorshipPad
 //
 //  Created by Wook Rhyu on 7/22/21.
@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 import Cephalopod
 
-class MainPanel: UIViewController {
+class MainPanelViewController: UIViewController {
     
     let AButton             = KeyButton(key: "A")
     let BbButton            = KeyButton(key: "Bb")

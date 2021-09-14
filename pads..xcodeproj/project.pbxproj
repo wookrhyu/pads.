@@ -14,7 +14,7 @@
 		5394E41726B8F33200A88B17 /* note_A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5394E41626B8F33200A88B17 /* note_A.mp3 */; };
 		53B418C426AA108300463B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C326AA108300463B74 /* AppDelegate.swift */; };
 		53B418C626AA108300463B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C526AA108300463B74 /* SceneDelegate.swift */; };
-		53B418C826AA108300463B74 /* MainPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C726AA108300463B74 /* MainPanel.swift */; };
+		53B418C826AA108300463B74 /* MainPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418C726AA108300463B74 /* MainPanelViewController.swift */; };
 		53B418CD26AA108500463B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CC26AA108500463B74 /* Assets.xcassets */; };
 		53B418D026AA108500463B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B418CE26AA108500463B74 /* LaunchScreen.storyboard */; };
 		53B418D926AA154900463B74 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B418D826AA154900463B74 /* KeyButton.swift */; };
@@ -38,7 +38,7 @@
 		53B418C026AA108300463B74 /* pads..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pads..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B418C326AA108300463B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B418C526AA108300463B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53B418C726AA108300463B74 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
+		53B418C726AA108300463B74 /* MainPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanelViewController.swift; sourceTree = "<group>"; };
 		53B418CC26AA108500463B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B418CF26AA108500463B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53B418D126AA108500463B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		53B418C226AA108300463B74 /* WorshipPad */ = {
 			isa = PBXGroup;
 			children = (
-				53B418C726AA108300463B74 /* MainPanel.swift */,
+				53B418C726AA108300463B74 /* MainPanelViewController.swift */,
 				53B418D826AA154900463B74 /* KeyButton.swift */,
 				5394E40826B8D14C00A88B17 /* PadKeyConstants.swift */,
 				53B418D726AA13CF00463B74 /* Support */,
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5394E40926B8D14C00A88B17 /* PadKeyConstants.swift in Sources */,
-				53B418C826AA108300463B74 /* MainPanel.swift in Sources */,
+				53B418C826AA108300463B74 /* MainPanelViewController.swift in Sources */,
 				53B418C426AA108300463B74 /* AppDelegate.swift in Sources */,
 				53B418C626AA108300463B74 /* SceneDelegate.swift in Sources */,
 				53B418D926AA154900463B74 /* KeyButton.swift in Sources */,
