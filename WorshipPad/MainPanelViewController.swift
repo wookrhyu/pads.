@@ -20,7 +20,7 @@ class MainPanelViewController: UIViewController {
     let EbButton            = KeyButton(key: "Eb")
     let EButton             = KeyButton(key: "E")
     let FButton             = KeyButton(key: "F")
-    let GbButton            = KeyButton(key: "Gb")
+    let GbButton            = KeyButton(key: "F#")
     let GButton             = KeyButton(key: "G")
     let AbButton            = KeyButton(key: "Ab")
     
@@ -88,6 +88,7 @@ class MainPanelViewController: UIViewController {
             fourthContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             fourthContainer.heightAnchor.constraint(equalToConstant: fourthOfHeight),
         ])
+        
     }
     
     func configureButtons(firstButton: KeyButton, secondButton: KeyButton, thirdButton: KeyButton, container: UIStackView){
@@ -111,24 +112,23 @@ class MainPanelViewController: UIViewController {
     
     func fadeInColor(_ viewToAnimate:UIButton){
         UIButton.animate(withDuration: 1) {
-            viewToAnimate.backgroundColor = .white.withAlphaComponent(0.30)
+            viewToAnimate.backgroundColor = .cyan.withAlphaComponent(0.25)
         } completion: { (_) in
-            print("done changing color")
         }
     }
     
     func fadeOutColor(_ viewToAnimate:UIButton){
         UIButton.animate(withDuration: 1) {
             viewToAnimate.backgroundColor = .white.withAlphaComponent(0.15)
-        } completion: { (_) in
-            print("done changing color")
         }
     }
     
-    func disableButtons(set: Bool) {
-        for button in keyButtonArray{
-            button.isUserInteractionEnabled = !set
-        }
+    
+    func enableButtons(set: Bool){
+        firstContainer.isUserInteractionEnabled = set
+        secondContainer.isUserInteractionEnabled = set
+        thirdContainer.isUserInteractionEnabled = set
+        fourthContainer.isUserInteractionEnabled = set
     }
     
     @objc func toggleSound(sender: Any) {
@@ -143,17 +143,22 @@ class MainPanelViewController: UIViewController {
             let url = URL(fileURLWithPath: path)
 
             do {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
-                print("Playback OK")
-                try AVAudioSession.sharedInstance().setActive(true)
-                print("Session is Active")
+                
+                do {
+                    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
+                } catch {
+                    assertionFailure("Failed to configure `AVAAudioSession`: \(error.localizedDescription)")
+                }
+                
+//                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
+//                try AVAudioSession.sharedInstance().setActive(true)
 
                 self.fadeInColor(button!)
                 player = try AVAudioPlayer(contentsOf: url)
                 player?.play()
                 player?.volume = 0
                 cephalopod = Cephalopod(player: player!)
-                cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in print("finished fading in")})
+                cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in })
                 soundPlaying = true
                 currentKey = button!.keyString!
                 currentColored = button!
@@ -165,35 +170,37 @@ class MainPanelViewController: UIViewController {
             return
 
         } else if button?.keyString != currentKey { //If a different Key is selected but sound should still be played
-             
-            print("different key is selected")
-            print("turning off current key")
             
             self.fadeOutColor(currentColored)
+            enableButtons(set: false)
+            
             cephalopod = Cephalopod(player: player!)
             cephalopod?.fadeOut(duration: 1, velocity: 2, onFinished: {finished in
-
-                print("finished fading out")
-                print("turning on new key")
+                
                 self.fadeInColor(button!)
                 guard let path = Bundle.main.path(forResource: filename, ofType:"mp3") else {
                     return }
                 let url = URL(fileURLWithPath: path)
 
                 do {
-                    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
-                    print("Playback OK")
-                    try AVAudioSession.sharedInstance().setActive(true)
-                    print("Session is Active")
+                    do {
+                        try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
+                    } catch {
+                        assertionFailure("Failed to configure `AVAAudioSession`: \(error.localizedDescription)")
+                    }
+//                    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
+//                    try AVAudioSession.sharedInstance().setActive(true)
 
                     self.player = try AVAudioPlayer(contentsOf: url)
                     self.player?.play()
                     self.player?.volume = 0
                     self.cephalopod = Cephalopod(player: self.player!)
-                    self.cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in print("finishe fading in")})
+                    self.cephalopod?.fadeIn(duration: 1, velocity: 2, onFinished:{ finished in })
 
                     self.currentKey = button!.keyString!
                     self.currentColored = button!
+                    
+                    self.enableButtons(set: true)
                 } catch let error {
                     print(error.localizedDescription)
                 }
@@ -201,13 +208,14 @@ class MainPanelViewController: UIViewController {
             
             
         } else { //If same key is selected meaning sound should turn off
-            print("Off")
             fadeOutColor(button!)
             cephalopod = Cephalopod(player: player!)
-            cephalopod?.fadeOut(duration: 1, velocity: 2, onFinished: {finished in print("finished fading out")})
+            cephalopod?.fadeOut(duration: 1, velocity: 2, onFinished: {finished in })
             soundPlaying = false
         }
+        
     }
+    
 
 }
 
